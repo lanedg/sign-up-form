@@ -1,0 +1,56 @@
+:root {
+  --background-color: rgb(19, 19, 19);
+  --text-color: rgb(213, 213, 213);
+  --input-background: rgb(242, 65, 116);
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+body {
+  display: flex;
+}
+
+#side-logo {
+  width: 35%;
+  background-image: url("frode-myklebust-DieicyVGTOA-unsplash.jpg");
+  background-size: contain;
+  color: var(--text-color);
+}
+
+#form-content {
+  max-width: 65%;
+  margin: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#call-to-action {
+  height: 20%;
+}
+
+#account-info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 100%;
+}
+
+form {
+  height: 500px;
+  width: 700px;
+}
+
+input {
+  background-color: var(--input-background);
+}
+
+.cta {
+  width: 55ch;
+}
