@@ -17,6 +17,11 @@ body {
   display: flex;
 }
 
+form {
+  height: 500px;
+  width: 700px;
+}
+
 #side-logo {
   width: 35%;
   background-image: url("frode-myklebust-DieicyVGTOA-unsplash.jpg");
@@ -26,25 +31,34 @@ body {
 
 #form-content {
   max-width: 65%;
-  margin: 20px;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
 #call-to-action {
   height: 20%;
+  margin: 50px 20px;
 }
 
 #account-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 80%;
   width: 100%;
 }
 
-form {
-  height: 500px;
-  width: 700px;
+.text-field-row {
+  display: flex;
+  gap: 20px;
+}
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  border: none;
 }
 
 input {
