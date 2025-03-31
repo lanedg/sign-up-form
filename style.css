@@ -2,6 +2,7 @@
   --background-color: rgb(19, 19, 19);
   --text-color: rgb(213, 213, 213);
   --input-background: rgb(242, 65, 116);
+  --sub-background-color: rgb(39, 39, 39);
 }
 
 html,
@@ -27,27 +28,49 @@ form {
   background-image: url("frode-myklebust-DieicyVGTOA-unsplash.jpg");
   background-size: contain;
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(55, 53, 52, 0.445);
+  height: 200px;
+}
+
+#logo-text {
+  font-size: 5rem;
 }
 
 #form-content {
-  max-width: 65%;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
 #call-to-action {
   height: 20%;
-  margin: 50px 20px;
+  margin: 200px 20px 30px;
 }
 
 #account-info {
   display: flex;
   flex-direction: column;
-  height: 80%;
   width: 100%;
+  border: none;
+  background-color: var(--sub-background-color);
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
+#account-info > * {
+  width: 700px;
 }
 
 .text-field-row {
+  padding: 10px;
   display: flex;
   gap: 20px;
 }
@@ -57,12 +80,20 @@ form {
   flex-direction: column;
 }
 
+.text-field > input {
+  width: 300px;
+}
+
 #submit {
   border: none;
 }
 
 input {
   background-color: var(--input-background);
+}
+
+#account-info > h1 {
+  padding-left: 10px;
 }
 
 .cta {
