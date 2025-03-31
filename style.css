@@ -8,9 +8,10 @@
 html,
 body {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  border: none;
   background-color: var(--background-color);
 }
 
@@ -18,13 +19,8 @@ body {
   display: flex;
 }
 
-form {
-  height: 500px;
-  width: 700px;
-}
-
 #side-logo {
-  width: 35%;
+  width: calc(35vw - 1px);
   background-image: url("frode-myklebust-DieicyVGTOA-unsplash.jpg");
   background-size: contain;
   color: var(--text-color);
@@ -48,11 +44,19 @@ form {
 #form-content {
   background-color: var(--background-color);
   color: var(--text-color);
+  width: calc(65vw - 1px);
 }
 
 #call-to-action {
   height: 20%;
   margin: 200px 20px 30px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #account-info {
