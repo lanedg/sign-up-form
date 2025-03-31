@@ -1,8 +1,8 @@
 :root {
   --background-color: rgb(19, 19, 19);
   --text-color: rgb(213, 213, 213);
-  --input-background: rgb(242, 65, 116);
-  --sub-background-color: rgb(39, 39, 39);
+  --input-background: rgb(190, 45, 74);
+  --sub-background-color: rgba(39, 39, 39, 0.315);
 }
 
 html,
@@ -33,7 +33,7 @@ body {
 #logo {
   width: 100%;
   text-align: center;
-  background-color: rgba(55, 53, 52, 0.445);
+  background-color: rgba(55, 53, 52, 0.185);
   height: 200px;
 }
 
@@ -49,7 +49,13 @@ body {
 
 #call-to-action {
   height: 20%;
-  margin: 200px 20px 30px;
+  margin: 200px 0px 30px;
+  padding-left: 40px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+em {
+  color: var(--input-background);
 }
 
 form {
@@ -65,41 +71,66 @@ form {
   width: 100%;
   border: none;
   background-color: var(--sub-background-color);
-  padding-left: 40px;
+  padding: 20px 1% 20px 40px;
   margin-bottom: 50px;
+  margin-inline: 0;
 }
 
 #account-info > * {
-  width: 700px;
+  width: 100%;
 }
 
 .text-field-row {
-  padding: 10px;
+  padding: 10px 0px;
   display: flex;
   gap: 20px;
 }
 
 .text-field {
   display: flex;
+  width: 45%;
   flex-direction: column;
+  font-size: 1.15rem;
+  row-gap: 5px;
 }
 
 .text-field > input {
-  width: 300px;
+  width: 100%;
 }
 
 #submit {
   border: none;
+  padding-left: 40px;
+  margin-inline: 0;
+}
+
+button[type="submit"] {
+  border-radius: 10px;
+  height: 70px;
+  width: 250px;
+  background-color: var(--input-background);
+  border: 2px var(--text-color) inset;
+}
+
+button[type="submit"]:active {
+  border: 2px var(--text-color) outset;
 }
 
 input {
   background-color: var(--input-background);
-}
-
-#account-info > h1 {
-  padding-left: 10px;
+  color: var(--text-color);
+  font-size: 1rem;
 }
 
 .cta {
   width: 55ch;
+}
+
+#account-log-in {
+  padding-left: 40px;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--input-background);
 }
