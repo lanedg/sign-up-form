@@ -34,33 +34,36 @@
                 <div class="text-field-row">
                     <div id="first" class="text-field">
                         <label for="first">First Name</label>
-                        <input type="text" name="first" id="first">
+                        <input required type="text" name="first" id="first" pattern="[A-Za-z]+"
+                            title="Please enter letters only. No special characters, spaces, or numbers are allowed.">
                     </div>
                     <div id="last" class="text-field">
                         <label for="last">Last Name</label>
-                        <input type="text" name="last id=" last">
+                        <input required type="text" name="last" id=" last" pattern="[A-Za-z]+"
+                            title="Please enter letters only. No special characters, spaces, or numbers are allowed.">
                     </div>
                 </div>
 
                 <div class="text-field-row">
                     <div id="email" class="text-field">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input required type="email" name="email" id="email">
                     </div>
                     <div id="number" class="text-field">
                         <label for="number">Phone Number</label>
-                        <input type="tel" name="phone" id="number">
+                        <input required type="tel" name="phone" id="number" pattern="^\d{3}-\d{3}-\d{4}$"
+                            title="Enter your number in the format: 123-456-7890">
                     </div>
                 </div>
 
                 <div class="text-field-row">
                     <div id="password" class="text-field">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input required type="password" name="password" id="password" minlength="5" maxlength="20">
                     </div>
                     <div id="confirm" class="text-field">
                         <label for="password-confirm">Confirm Password</label>
-                        <input type="password" name="password_confirm" id="password-confirm">
+                        <input required type="password" name="password_confirm" id="password-confirm">
                     </div>
                 </div>
             </fieldset>
